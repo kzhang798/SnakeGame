@@ -6,6 +6,10 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/snakeDatabase"
 mongo = PyMongo(app)
 
+@app.route('/')
+def check():
+    return "Flask is up."
+
 @app.route('/user', methods=['POST'])
 def create_user():
     data = request.form
