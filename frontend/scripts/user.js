@@ -6,6 +6,7 @@ $(document).ready(() => {
         if (pageUrl.length === 2) {
             let username = decodeURIComponent(pageUrl[1].split(`=`)[1]);
             $('#optionsLink').attr('href', `/options.html?username=${username}`);
+            $('#gameLink').attr('href', `/game.html?username=${username}`);
             $.ajax({
                 type: `GET`,
                 url: `/user/${username}/scores`,
