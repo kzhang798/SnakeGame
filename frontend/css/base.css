@@ -1,0 +1,21 @@
+.mynavbar {
+    margin-top: 2em;
+}
+
+#errorMsg {
+    text-align: center;
+}
+
+.to-fade {
+    display: none;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
